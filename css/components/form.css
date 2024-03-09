@@ -1,0 +1,41 @@
+.text-form{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form{
+  padding-top: 20px;
+  width: 50%;
+  margin-left: 15%;
+  text-align: left;
+}
+
+
+#fname{
+  width: 250px;
+  height: 25px;
+  border: 4px solid var(--red);
+  margin: 15px 0px;
+}
+
+#email{
+  margin: 15px 0px;
+  width: 250px;
+  height: 25px;
+  border: 4px solid var(--red);
+}
+
+#message{
+  width: 400px;
+  height: 200px;
+  border: 4px solid var(--red);
+  margin: 15px 0px;
+}
+
+
+.text-form h2{
+  padding: 0%;
+}

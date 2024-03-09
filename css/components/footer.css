@@ -1,0 +1,16 @@
+.footer{
+  background-color: black;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span .fa-solid .fa-heart{
+  color: #8a0ba7;
+}
+
+span .fa-solid .fa-heart:hover{
+  color: white;
+}

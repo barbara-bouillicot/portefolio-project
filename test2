@@ -1,0 +1,105 @@
+const chatBtn = document.querySelector("#chatbot-btn");
+const chatContainer = document.querySelector(".chatbot-container");
+const closeBtn = document.querySelector("#close-btn");
+const chatBox = document.querySelector(".chatbox");
+
+const data = {
+  chatinit: {
+    title: ["Hello 😀", "I am Barbara Chatbot", "I can answer questions about Barbara's work", "How can I help you?"],
+    options: ["Just saying hello", "How can I reach out to you?", "I need tax advice", "I want to see your resume"]
+  },
+  options: {
+    "Just saying hello": ["Hello", "Thanks for saying hi", "I hope you enjoyed looking at my work", "Can I help you with anything else?"],
+    "How can I reach out to you?": ["For a quick response, try to contact me via Linkedin or send me an email", "You can find my links here:", "", "Or you can contact me via the contact form"],
+    "I need tax advice": ["Sorry, I'm not a tax consultant anymore", "Now, I'm a dev 😎"],
+    "I want to see your resume": ["You can download it from the homepage", "Do not hesitate to reach me out!", "I will be happy to chat with you!"]
+  }
+};
+
+
+const appendMessage = (message) => {
+  const element = document.createElement("p");
+  element.innerText = message;
+  element.classList.add("message-chatbot");
+  chatBox.appendChild(element);
+  Scroll();
+}
+
+const appendResponse = (message) => {
+  const element = document.createElement("p");
+  element.innerText = message;
+  element.classList.add("test");
+  chatBox.appendChild(element);
+  Scroll();
+}
+
+const showOptions = () => {
+  const options = data.chatinit.options;
+  options.forEach(option => {
+    const element = document.createElement("p");
+    element.innerText = option;
+    element.classList.add("answers-chatbot");
+    chatBox.appendChild(element);
+  });
+}
+
+const handleResponse = (option) => {
+  const responses = data.options[option];
+  responses.forEach(response => {
+    appendMessage(response);
+  });
+  showOptionsAgain();
+}
+
+const showOptionsAgain = () => {
+  const options = data.chatinit.options;
+  options.forEach(option => {
+    const element = document.createElement("p");
+    element.innerText = option;
+    element.classList.add("answers-chatbot");
+    chatBox.appendChild(element);
+  });
+}
+
+const Scroll = () => {
+  chatBox.scrollTop = chatBox.scrollHeight;
+}
+
+chatBtn.addEventListener("click", () => {
+  chatContainer.style.display = "flex";
+  handleChatInit();
+});
+
+closeBtn.addEventListener("click", () => {
+  chatContainer.style.display = "none";
+});
+
+const handleChatInit = () => {
+  const titles = data.chatinit.title;
+  titles.forEach(title => {
+    appendMessage(title);
+  });
+  showOptions();
+}
+
+chatBox.addEventListener("click", event => {
+  if (event.target.classList.contains("answers-chatbot")) {
+    const option = event.target.innerText;
+    const elements = document.querySelectorAll(".answers-chatbot")
+    elements.forEach(element => {
+         element.remove();
+    });
+
+    appendResponse(option);
+    handleResponse(option);
+  }
+});
+
+const refreshBtn = document.querySelector("#refresh-btn");
+refreshBtn.addEventListener("click", () => {
+  const elements = document.querySelectorAll(".answers-chatbot, .message-chatbot");
+  elements.forEach(element => {
+    element.remove();
+  });
+  handleChatInit();
+});

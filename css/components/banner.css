@@ -1,0 +1,26 @@
+.social-icons{
+  margin-top: 30px;
+}
+
+.social-icons a{
+  text-decoration: none;
+  padding: 15px;
+}
+
+.fa-linkedin, .fa-github, .fa-solid.fa-envelope{
+  font-size: 32px;
+  color: black;
+  transition: 0.2s;
+}
+
+.fa-linkedin:hover{
+  color: var(--red);
+}
+
+.fa-github:hover{
+  color: var(--red);
+}
+
+.fa-solid.fa-envelope:hover{
+  color: var(--red);
+}

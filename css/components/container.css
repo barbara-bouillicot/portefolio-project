@@ -1,0 +1,89 @@
+.banner-container{
+  width: 100%;
+  padding: 20px;
+  background-color: inherit;
+}
+
+.navbar-container{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  background-color: inherit;
+}
+
+.typing-container{
+  width: 70%;
+  margin: 60px auto;
+  padding: 50px 0px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+}
+
+.form-container{
+  width: 80%;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: inherit;
+  text-align: center;
+}
+
+.form-wrapper{
+  display: flex;
+  justify-content: space-around;
+  box-shadow: rgba(147, 6, 6, 0.25) 0px 54px 55px, rgba(147, 6, 6, 0.12) 0px -12px 30px, rgba(147, 6, 6, 0.12) 0px 4px 6px, rgba(147, 6, 6, 0.17) 0px 12px 13px, rgba(147, 6, 6, 0.09) 0px -3px 5px;
+  padding: 20px;
+}
+
+.about-container{
+  width: 70%;
+  margin: 40px auto;
+  background-color: inherit;
+  text-align: center;
+  padding: 20px;
+}
+
+.about-content{
+  display: flex;
+  align-items: center;
+}
+
+.background-container{
+  width: 80%;
+  height: 600px;
+  margin: 40px auto;
+  background-color: inherit;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+
+}
+
+.projects-container{
+  width: 100%;
+  margin: 0 auto;
+  background-color: inherit;
+  text-align: center;
+  padding: 20px;
+}
+
+.cards-container{
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skills-container{
+  width: 70%;
+  margin: 20px auto;
+  background-color: inherit;
+  text-align: center;
+  padding: 20px;
+}

@@ -1,0 +1,61 @@
+.navbar-container h2{
+  padding: 0px 0px 10px 50px;
+  font-size: 30px;
+}
+
+#menu{
+  list-style: none;
+}
+
+#menu li{
+  display: inline-block;
+  padding: 0px 20px 0 20px;
+  font-size: 22px;
+}
+
+#menu li a{
+  padding-bottom: 10px;
+  text-decoration: none;
+  color:var(--red);
+  transition: 0.1s;
+  position: relative;
+  display: block;
+}
+
+#menu li a:hover{
+  color:white;
+}
+
+#menu li a::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 4px;
+  background-color: #FEFEFE;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease;
+  transform: scaleX(0);
+ }
+
+ #menu li a:hover::after {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+ }
+
+
+.fa-moon{
+  font-size: 22px;
+  padding-right: 50px;
+}
+
+.fa-moon:hover{
+  font-size: 20px;
+  transition: 0.1s;
+  color: white;
+}
+
+.fa-solid.fa-bars{
+  display: none;
+}
