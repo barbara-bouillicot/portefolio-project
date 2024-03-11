@@ -33,7 +33,7 @@
 
 .form-wrapper{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   box-shadow: rgba(147, 6, 6, 0.25) 0px 54px 55px, rgba(147, 6, 6, 0.12) 0px -12px 30px, rgba(147, 6, 6, 0.12) 0px 4px 6px, rgba(147, 6, 6, 0.17) 0px 12px 13px, rgba(147, 6, 6, 0.09) 0px -3px 5px;
   padding: 20px;
 }
@@ -73,11 +73,10 @@
 
 .cards-container{
   width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap:20px;
   margin: 20px auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 .skills-container{
