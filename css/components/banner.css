@@ -7,7 +7,7 @@
   padding: 15px;
 }
 
-.fa-linkedin, .fa-github, .fa-solid.fa-envelope{
+.fa-linkedin, .fa-github, .fa-solid.fa-envelope, .fa-link{
   font-size: 32px;
   color: black;
   transition: 0.2s;
@@ -22,5 +22,9 @@
 }
 
 .fa-solid.fa-envelope:hover{
+  color: var(--red);
+}
+
+.fa-link:hover{
   color: var(--red);
 }

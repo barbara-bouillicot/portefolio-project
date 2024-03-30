@@ -31,6 +31,8 @@
 }
 
 .chatbox{
+  display: flex;
+  flex-direction: column;
   height: 450px;
   padding:15px ;
   overflow: auto;
@@ -51,7 +53,7 @@
   padding: 15px;
   width:fit-content;
   border-radius: 10px;
-  margin-left: 172px;
+  align-self: flex-end;
 }
 
 .answers-chatbot{
