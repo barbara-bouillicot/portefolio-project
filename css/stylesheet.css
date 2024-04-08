@@ -123,8 +123,10 @@ h1{
 @media screen and (max-width: 768px){
 
   .nav{
-    margin-top: 20px;
+    margin-top:30px;
     min-width: 90vw;
+    top:10px;
+    left:0
   }
   .nav-links{
     padding: 0;
@@ -144,7 +146,7 @@ h1{
   }
 
   .typing-container{
-    margin: 30px auto;
+    margin: 125px auto;
   }
 
   .typing-container h1{
@@ -198,6 +200,7 @@ h1{
 
   .projects-wrapper{
     width:90%;
+    margin-top: 0;
   }
 
   .project-card{
@@ -251,4 +254,10 @@ h1{
     height: 100vh;
   }
 
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .chatbot-container{
+    width:45%;
+  }
 }
