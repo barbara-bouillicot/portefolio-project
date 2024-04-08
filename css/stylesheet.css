@@ -246,6 +246,7 @@ h1{
     width: 92%;
     height: 100%;
     top:0;
+    right: 0;
     left:0;
     z-index:1;
   }
@@ -269,5 +270,11 @@ h1{
 @media (min-width: 993px) and (max-width: 1024px) {
   .chatbot-container{
     top:236px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .typing-container{
+    margin: 165px auto;
   }
 }
