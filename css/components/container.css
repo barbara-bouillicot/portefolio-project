@@ -33,7 +33,7 @@
 .form-wrapper{
   display: flex;
   justify-content: space-evenly;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: var(--border-form) 0px 5px 15px;
   padding: 20px;
 }
 
@@ -72,6 +72,10 @@
   background-color: inherit;
   text-align: center;
   padding: 20px;
+}
+
+.skills-container p{
+  margin: 15px 0;
 }
 
 .background-container{
