@@ -120,7 +120,7 @@ h1{
 
 /* Media queries*/
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
 
   .nav{
     margin-top:30px;
@@ -256,8 +256,18 @@ h1{
 
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 767px) and (max-width: 992px) {
   .chatbot-container{
-    width:45%;
+    top:410px;
+  }
+
+  .typing-container{
+    margin: 300px auto;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1024px) {
+  .chatbot-container{
+    top:236px;
   }
 }
