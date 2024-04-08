@@ -120,7 +120,7 @@ h1{
 
 /* Media queries*/
 
-@media screen and (max-width: 390px){
+@media screen and (max-width: 425px){
 
   .nav{
     margin-top: 20px;
