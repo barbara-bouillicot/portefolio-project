@@ -71,12 +71,12 @@ closeBtn.addEventListener("click", () => {
 
 const data = {
   chatinit: {
-    title: ["Hello 😀", "I am Barbara Chatbot", "I can answer questions about Barbara's work", "How can I help you?"],
+    title: ["Hello 😀", "This is my chatbot!", "I can answer questions about my work", "How can I help you?"],
     options: ["Just saying hello", "How can I reach out to you?", "I need a tax advice", "I want to see your resume"]
   },
   options: {
     "Just saying hello": ["Hello", "Thanks for saying hi", "I hope you enjoyed looking at my work", "Can I help you with anything else?"],
-    "How can I reach out to you?": ["For a quick response, try to contact me via Linkedin or send me an email", "You can find my links here:", "", "Or you can contact me via the contact form"],
+    "How can I reach out to you?": ["For a quick response, try to contact me via Linkedin or send me an email", "You can find my links on the homepage", "Or you can also contact me via the contact form"],
     "I need a tax advice": ["Sorry, I'm not a tax consultant anymore", "Now, I'm a dev 😎"],
     "I want to see your resume": ["You can download it from the homepage", "Do not hesitate to reach me out!", "I will be happy to chat with you!"]
   }
