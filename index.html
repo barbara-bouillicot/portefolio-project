@@ -8,27 +8,21 @@
         <link href="css/stylesheet.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/adcac8046b.js" crossorigin="anonymous"></script>
     </head>
     <body>
       <div class="banner-container">
-        <div class="navbar-container">
-          <h2>Portefolio</h2>
-          <div class="menu-links-wrapper">
-          <ul id="menu">
-            <li><a href="#about">About</a></li>
-            <li><a href="#backgound">Background</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><i class="fa-solid fa-moon neon-text" id="btn-moon"></i></li>
-            <!--<li><i class="fa-solid fa-bars"></i></li>-->
-          </ul>
-        </div>
-          <div class="nav-right">
-            <i class="fa-solid fa-bars"></i>
+        <div class="nav">
+          <div class="nav-links">
+            <a class="nav-links-item active" href="#about">About</a>
+            <a class="nav-links-item" href="#background">Background</a>
+            <a class="nav-links-item" href="#skills">Skills</a>
+            <a class="nav-links-item" href="#projects">Projects</a>
+            <a class="nav-links-item" href="#contact">Contact</a>
           </div>
+          <i class="fa-solid fa-moon neon-text" id="btn-moon"></i>
+          <!--<li><i class="fa-solid fa-bars"></i></li>-->
         </div>
       </div>
         <div class="typing-container">
@@ -36,8 +30,8 @@
           <a href="css/images/Hi from the wombat.png" target="_blank"id="btn-cv"download>Download my cv</a>
           <div class="social-icons">
             <a href="https://www.linkedin.com/in/barbara-bouillicot-a8762010a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/barbara-bouillicot" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/barbara-bouillicot" target="_blank"><i class="fa-brands fa-github github"></i></a>
+            <a href="mailto:barbara.bouillicot@hotmail.fr" target="_blank"><i class="fa-solid fa-envelope"></i></a>
           </div>
         </div>
         <div class="about-container" id="about">
@@ -58,140 +52,244 @@
           </div>
       </div>
 
-      <div class="background-container">
-        <h2 id="backgound">Background</h2>
-      <div class="timeline">
-        <ul>
-          <li>
-            <div>
-              <p><span>2024</span>Le Wagon bootcamp</p>
-              <button class="read-more-btn">Read more</button>
-              <p class="background-details"><strong>Online | February - March 2024</strong><br><br>
-
-                A 9 weeks bootcamp during which I built solid foundations in software development and databases.<br><br>
-                Through rigorous training in front-end and back-end technologies, I gained proficiency in building  web applications and implementing industry best practices.<br><br>
-                I’ve collaborated with a diverse team on real-world projects, fostering teamwork and communication skills.<br><br>
-                I demonstrated problem-solving abilities through debugging, troubleshooting, and resolving coding challenges.<br><br>
-                My final project:<br><br>
-                <strong>HobbyConnect</strong> - I pitched the initial idea that has been selected to develop. I worked with 3 other teammates on this project. This is a user-friendly and straightforward mobile app that connects people through shared hobbies and events.
-
-              </p>
+      <div class="background-container" id="background">
+        <h2 class="text-effect">Background</h2>
+      <div class="background-wrapper">
+        <div class="background-item">
+          <div class="background-dates">
+            Jan 2024 - Mar 2024
+          </div>
+          <div class="background-content">
+            <div class="background-title">
+              Le Wagon Web Development Bootcamp
             </div>
-          </li>
-          <li>
-            <div>
-              <p><span>2023</span>One-year experience in Australia</p>
-              <button class="read-more-btn">Read more</button>
-              <p class="background-details"><strong>Australia | 2023</strong><br><br>
-
-                After a one-month solo road-trip in New-Zeland, I decided to head to Australia. I lived in Melbourne for almost one year, working casually in a bakery. It was an amazing experience to spend some time in Australia.
-              </p>
+            <div class="background-skills">
+              <span class="skill">Ruby</span>
+              <span class="skill">Bootstrap</span>
+              <span class="skill">Stimulus JS</span>
             </div>
-          </li>
-          <li>
-            <div>
-              <p><span>2020</span>Bilingual Customer Support Specialist at MOBI</p>
               <button class="read-more-btn">Read more</button>
-              <p class="background-details"><strong>Toronto, Canada | Aug 2020 - July 2022</strong><br><br>
-
-                MOBI(previously Mobi2go) was a New-Zeland based SaaS start-up when I joined them. <br><br>They had just opened a new office in Toronto, and were looking for a bilingual customer service specialist to help their customers. They gave me a chance even if I had no technical backgound. <br><br>It was a challenging and amazing experience. It allowed me to discover how a small structure works. <br><br>This experience marked my introduction to the tech company environment and was also my first exposure to coding. I had to collaborate on a daily basis with the dev team and it gave me a chance to discover what's they were doing on a daily basis.  </p>
+            <div class="background-details">
+              A 9 weeks bootcamp during which I built solid foundations in software development and databases.
+              Through rigorous training in front-end and back-end technologies, I gained proficiency in building  web applications and implementing industry best practices.
+              I’ve collaborated with a diverse team on real-world projects, fostering teamwork and communication skills.
+              I demonstrated problem-solving abilities through debugging, troubleshooting, and resolving coding challenges.
+              My final project:<br><br>
+              <strong>HobbyConnect</strong> - I pitched the initial idea that has been selected to develop. I worked with 3 other teammates on this project. This is a user-friendly and straightforward mobile app that connects people through shared hobbies and events.
             </div>
-          </li>
-          <li>
-            <div>
-              <p><span>2015</span>Senior Tax Consultant at EY</p>
+          </div>
+        </div>
+
+        <div class="background-item">
+          <div class="background-dates">
+            Jan 2023 - dec 2023
+          </div>
+          <div class="background-content">
+            <div class="background-title">
+              Australia
+            </div>
+            <div class="background-skills">
+              <span class="skill">adaptability</span>
+            </div>
               <button class="read-more-btn">Read more</button>
-              <p class="background-details"><strong>Lyon, France | Jan 2015 - Oct 2019</strong><br><br>
-
-                After a 6-months internship at EY in 2014, I was hired as a Tax consultant in the Global Mobility department. <br><br>This department is specialized in personal income taxes matter for employees from big and medium companies who send their employees on a mission abroad.<br><br> It was a very formative experience, that allowed me to learn how to work in a big company and work on a specific field that I really liked.</p>
+            <div class="background-details">
+              After a one-month solo road-trip in New-Zeland, I decided to head to Australia. I lived in Melbourne for almost one year, working casually in a bakery. It was an amazing experience to spend some time in Australia.
             </div>
-          </li>
-          <li>
-            <div>
-              <p><span>2014</span>Internship at EY</p>
+          </div>
+        </div>
+
+        <div class="background-item">
+          <div class="background-dates">
+            Aug 2020 - July 2022
+          </div>
+          <div class="background-content">
+            <div class="background-title">
+              Bilingual Customer Support Specialist at MOBI
+            </div>
+            <div class="background-skills">
+              <span class="skill">Ruby</span>
+              <span class="skill">Bootstrap</span>
+              <span class="skill">Stimulus JS</span>
+            </div>
               <button class="read-more-btn">Read more</button>
-              <p class="background-details"><strong>Lyon, France | Jan 2014 - July 2014</strong><br><br>
-
-              Through this experience, I discovered the world of big corporation. My main mission was to be part of the busy tax season, to prepare French tax residents and non-French tax residents income tax returns.
-              </p>
+            <div class="background-details">
+              MOBI(previously Mobi2go) was a New-Zeland based SaaS start-up when I joined them. <br><br>They had just opened a new office in Toronto, and were looking for a bilingual customer service specialist to help their customers. They gave me a chance even if I had no technical backgound. <br><br>It was a challenging and amazing experience. It allowed me to discover how a small structure works. <br><br>This experience marked my introduction to the tech company environment and was also my first exposure to coding. I had to collaborate on a daily basis with the dev team and it gave me a chance to discover what's they were doing on a daily basis.
             </div>
-          </li>
-          <li>
-            <div>
-              <p><span>2013</span>Master degree in tax law</p>
+          </div>
+        </div>
+
+        <div class="background-item">
+          <div class="background-dates">
+            Jan 2015 - Oct 2019
+          </div>
+          <div class="background-content">
+            <div class="background-title">
+              Senior Tax Consultant at EY
+             </div>
+            <div class="background-skills">
+              <span class="skill">Ruby</span>
+              <span class="skill">Bootstrap</span>
+              <span class="skill">Stimulus JS</span>
+            </div>
               <button class="read-more-btn">Read more</button>
-              <p class="background-details"><strong>Lyon, France | 2008 - 2013</strong><br><br>
-
-              After studying law for 5 years, I obtained my Master degree certificate, in tax law. I chose to specialized myself in tax law because it was a technical subject, that requires good problem-solving skills. </p>
+            <div class="background-details">
+              After a 6-months internship at EY in 2014, I was hired as a Tax consultant in the Global Mobility department. <br><br>This department is specialized in personal income taxes matter for employees from big and medium companies who send their employees on a mission abroad.<br><br> It was a very formative experience, that allowed me to learn how to work in a big company and work on a specific field that I really liked.
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
-      </div>
+    </div>
+
 
       <div class="projects-container" id="projects">
         <h2>Projects</h2>
-        <div class="cards-container">
-          <div class="card">
-            <img src="/css/images/HC-portefolio.png" alt="HobbyConnect app user profile page" class="poject-img">
-            <h3>HobbyConnect</h3>
-            <p>Looking for new buddies who share common hobbies? who can join you for a specific event? HobbyConnect is a web mobile app. It was an idea I proposed as a final project during Le Wagon bootcamp. This is a group programming project realised with Laura, Luisa and Matthew.</p>
-              <div class="skill">Ruby</div>
-              <div class="skill">HTML</div>
-              <div class="skill">CSS</div>
-              <div class="skill">Javascript</div><br><br>
-            <a href="https://github.com/barbara-bouillicot/HobbyConnect" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.hobbyconnect.lol/" target="_blank"><i class="fa-solid fa-link"></i></a>
+        <div class="projects-wrapper">
+          <div class="project-card">
+            <div class="project-img">
+              <button class="slide-arrow prev">&#8249;</button>
+              <button class="slide-arrow next">&#8250;</button>
+
+              <ul class="slides-container" id="slides-container">
+                <li class="slide"><img src="/css/images/HC-slide1.png" alt=""></li>
+                <li class="slide"><img src="/css/images/HC-slide2.png" alt=""></li>
+                <li class="slide"><img src="/css/images/HC-slide3.png" alt=""></li>
+                <li class="slide"><img src="/css/images/HC-slide4.png" alt=""></li>
+              </ul>
+            </div>
+            <div class="project-infos">
+              <div class="project-name">
+                <p>HobbyConnect</p>
+              </div>
+              <div class="project-description">
+                <p>Looking for new buddies who share common hobbies? who can join you for a specific event? HobbyConnect is a web mobile app. It was an idea I proposed as a final project during Le Wagon bootcamp. This is a group programming project realised with Laura, Luisa and Matthew.</p>
+              </div>
+              <div class="project-skills">
+                <span class="skill">Ruby</span>
+                <span class="skill">Bootstrap</span>
+                <span class="skill">Stimulus JS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://www.hobbyconnect.lol/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                <a href="https://github.com/barbara-bouillicot/HobbyConnect" target="_blank"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
           </div>
 
-          <div class="card">
-            <img src="https://i.pinimg.com/originals/a8/24/07/a8240786b9dc18c42ab398b75b2d2113.png" alt="" class="poject-img">
-            <h3>Project Title</h3>
-            <p>Short description of the project</p>
-            <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="#" target="_blank"><i class="fa-solid fa-link"></i></a>
+          <div class="project-card">
+            <div class="project-img">
+              <button class="slide-arrow prev">&#8249;</button>
+              <button class="slide-arrow next">&#8250;</button>
+
+              <ul class="slides-container" id="slides-container">
+                <li class="slide"><img src="/css/images/HC-portefolio.png" alt=""></li>
+                <li class="slide"><img src="/css/images/HC-portefolio.png" alt=""></li>
+                <li class="slide"><img src="/css/images/HC-portefolio.png" alt=""></li>
+                <li class="slide"><img src="/css/images/HC-portefolio.png" alt=""></li>
+              </ul>
+            </div>
+            <div class="project-infos">
+              <div class="project-name">
+                <p>HobbyConnect</p>
+              </div>
+              <div class="project-description">
+                <p>Looking for new buddies who share common hobbies? who can join you for a specific event? HobbyConnect is a web mobile app. It was an idea I proposed as a final project during Le Wagon bootcamp. This is a group programming project realised with Laura, Luisa and Matthew.</p>
+              </div>
+              <div class="project-skills">
+                <span class="skill">Ruby</span>
+                <span class="skill">Bootstrap</span>
+                <span class="skill">Stimulus JS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://furbnb-71b32b374a3f.herokuapp.com/"><i class="fa-solid fa-link"></i></a>
+                <a href="https://github.com/barbara-bouillicot/Airbnb-clone"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
           </div>
 
-          <div class="card">
-            <img src="https://i.pinimg.com/originals/a8/24/07/a8240786b9dc18c42ab398b75b2d2113.png" alt="" class="poject-img">
-            <h3>Project Title</h3>
-            <p>Short description of the project</p>
-            <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="#" target="_blank"><i class="fa-solid fa-link"></i></a>
+          <div class="project-card">
+            <div class="project-img">
+              <button class="slide-arrow prev">&#8249;</button>
+              <button class="slide-arrow next">&#8250;</button>
+
+              <ul class="slides-container" id="slides-container">
+                <li class="slide"><img src="/css/images/HC-portefolio.png" alt=""></li>
+                <li class="slide"><img src="/css/images/HC-portefolio.png" alt=""></li>
+                <li class="slide"><img src="/css/images/HC-portefolio.png" alt=""></li>
+                <li class="slide"><img src="/css/images/HC-portefolio.png" alt=""></li>
+              </ul>
+            </div>
+            <div class="project-infos">
+              <div class="project-name">
+                <p>HobbyConnect</p>
+              </div>
+              <div class="project-description">
+                <p>Looking for new buddies who share common hobbies? who can join you for a specific event? HobbyConnect is a web mobile app. It was an idea I proposed as a final project during Le Wagon bootcamp. This is a group programming project realised with Laura, Luisa and Matthew.</p>
+              </div>
+              <div class="project-skills">
+                <span class="skill">Ruby</span>
+                <span class="skill">Bootstrap</span>
+                <span class="skill">Stimulus JS</span>
+              </div>
+              <div class="project-links">
+                <i class="fa-solid fa-link"></i>
+                <i class="fa-brands fa-github"></i>
+              </div>
+            </div>
           </div>
 
-          <div class="card">
-            <img src="https://i.pinimg.com/originals/a8/24/07/a8240786b9dc18c42ab398b75b2d2113.png" alt="" class="poject-img">
-            <h3>Project Title</h3>
-            <p>Short description of the project</p>
-            <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="#" target="_blank"><i class="fa-solid fa-link"></i></a>
-          </div>
+          <div class="project-card">
+            <div class="project-img">
+              <button class="slide-arrow prev">&#8249;</button>
+              <button class="slide-arrow next">&#8250;</button>
 
+              <ul class="slides-container" id="slides-container">
+                <li class="slide"><img src="/css/images/HC-portefolio.png" alt=""></li>
+                <li class="slide"><img src="/css/images/HC-portefolio.png" alt=""></li>
+                <li class="slide"><img src="/css/images/HC-portefolio.png" alt=""></li>
+                <li class="slide"><img src="/css/images/HC-portefolio.png" alt=""></li>
+              </ul>
+            </div>
+            <div class="project-infos">
+              <div class="project-name">
+                <p>HobbyConnect</p>
+              </div>
+              <div class="project-description">
+                <p>Looking for new buddies who share common hobbies? who can join you for a specific event? HobbyConnect is a web mobile app. It was an idea I proposed as a final project during Le Wagon bootcamp. This is a group programming project realised with Laura, Luisa and Matthew.</p>
+              </div>
+              <div class="project-skills">
+                <span class="skill">Ruby</span>
+                <span class="skill">Bootstrap</span>
+                <span class="skill">Stimulus JS</span>
+              </div>
+              <div class="project-links">
+                <i class="fa-solid fa-link"></i>
+                <i class="fa-brands fa-github"></i>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="skills-container" id="skills">
         <h2>Skills</h2>
 
-          <p>Programming languages:</p><br>
-          <div class="skill">Ruby</div>
-          <div class="skill">CSS</div>
-          <div class="skill">HTML</div>
-          <div class="skill">Javascript</div>
-          <p>Frameworks & libraries:</p><br>
-          <div class="skill">React</div>
-          <div class="skill">Bootstrap</div>
-          <div class="skill">VueJS</div>
-          <p>Technologies:</p><br>
-          <div class="skill">SQL Server</div>
-          <div class="skill">GitHub</div>
-          <div class="skill">Git</div>
-          <p>Programs & tools:</p><br>
-          <div class="skill">Figma</div>
-          <div class="skill">VS Code</div>
-          <div class="skill">Mockplus</div>
-        </ul>
+          <p>Programming languages:</p>
+          <span class="skill">Ruby</span>
+          <span class="skill">CSS</span>
+          <span class="skill">HTML</span>
+          <span class="skill">Javascript</span>
+          <p>Frameworks & libraries:</p>
+          <span class="skill">Bootstrap</span>
+          <span class="skill">Stimulus JS</span>
+          <span class="skill">Vue JS</span>
+          <p>Technologies:</p>
+          <span class="skill">SQL Server</span>
+          <span class="skill">Git</span>
+          <span class="skill">Github</span>
+          <p>Programs & tools:</p>
+          <span class="skill">Figma</span>
+          <span class="skill">VScode</span>
+
       </div>
 
       <div class="form-container">
@@ -199,7 +297,7 @@
         <div class="form-wrapper">
         <div class="text-form">
           <h2>Get in touch</h2>
-          <p>Just want to get in touch to say hello, ask for more information about my background or see if we can build something amazing together? <strong>I’d love to hear from you!</strong><br><br>
+          <p>Just want to get in touch to say hello, ask for more information about my background or see if we can build something amazing together? <span>I’d love to hear from you!</span><br><br>
 
             If you want to contact me, you can use one of my social links (linkedin or email) or send me your message via this contact form.<br><br>
 

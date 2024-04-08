@@ -1,3 +1,57 @@
+// navbar
+
+const navLinks = document.querySelector(".nav-links")
+const navLinksItems = document.querySelectorAll(".nav-links-item")
+
+window.addEventListener("scroll", (event) => {
+  if (window.scrollY > 0) {
+    navLinks.classList.add("filled")
+    navLinksItems.forEach((item) =>
+      item.classList.add("white")
+    );
+  } else {
+    navLinks.classList.remove("filled")
+    navLinksItems.forEach((item) =>
+      item.classList.remove("white")
+    );
+  }
+});
+
+navLinksItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    navLinksItems.forEach((link) => {
+      link.classList.remove("active");
+    });
+    item.classList.add("active");
+  });
+});
+
+// carousel
+
+document.querySelectorAll('.project-card').forEach((card) => {
+  const slidesContainer = card.querySelector('.slides-container');
+  const slides = card.querySelectorAll('.slide');
+  const prevButton = card.querySelector('.slide-arrow.prev');
+  const nextButton = card.querySelector('.slide-arrow.next');
+  const slideWidth = slides[0].clientWidth;
+
+  let currentSlideIndex = 0;
+
+  const updateSlidesContainer = () => {
+    slidesContainer.scrollLeft = currentSlideIndex * slideWidth;
+  };
+
+  prevButton.addEventListener('click', () => {
+    currentSlideIndex = Math.max(0, currentSlideIndex - 1);
+    updateSlidesContainer();
+  });
+
+  nextButton.addEventListener('click', () => {
+    currentSlideIndex = Math.min(slides.length - 1, currentSlideIndex + 1);
+    updateSlidesContainer();
+  });
+});
+
 // switch toggle for dark mode
 const moonBtn = document.querySelector("#btn-moon");
 
@@ -10,6 +64,10 @@ const chatBtn = document.querySelector("#chatbot-btn");
 const chatContainer = document.querySelector(".chatbot-container");
 const closeBtn = document.querySelector("#close-btn");
 const chatBox = document.querySelector(".chatbox");
+
+closeBtn.addEventListener("click", () => {
+  chatContainer.style.display = "none";
+});
 
 const data = {
   chatinit: {
@@ -87,9 +145,7 @@ chatBtn.addEventListener("click", () => {
   handleChatInit,1000)
 });
 
-closeBtn.addEventListener("click", () => {
-  chatContainer.style.display = "none";
-});
+
 
 const handleChatInit = () => {
   const titles = data.chatinit.title;
@@ -133,7 +189,7 @@ const sleep = (ms) => {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-const words = ["Barbara", "a Front Dev"];
+const words = ["Barbara", "a Full Stack Dev"];
 const el = document.querySelector('.typing-effect');
 
 let sleepTime = 100;
@@ -185,21 +241,12 @@ readMoreBtns.forEach(btn => {
 });
 
 
-const backgroundContainer = document.querySelector(".background-container");
+// const backgroundContainer = document.querySelector(".background-container");
 
-const scrollTimeline = () => {
-  backgroundContainer.scrollTop = backgroundContainer.scrollHeight;
-}
+//const scrollTimeline = () => {
+ // backgroundContainer.scrollTop = backgroundContainer.scrollHeight;
+//}
 
-// toggle - display menu for media screen
-
-const menuBtn = document.querySelector(".fa-bars");
-const menu = document.querySelector("#menu")
-
-menuBtn.addEventListener("click", () => {
-  menu.classList.toggle("display");
-  menu.classList.toggle("mobile-view");
-})
 
 // contact form
 
