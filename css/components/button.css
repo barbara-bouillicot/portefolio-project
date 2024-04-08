@@ -61,7 +61,7 @@
 .btn-form{
   width: auto;
   background-color:  var(--color);
-  color:var(--red);
+  color:var(--color-light);
   font-weight: bold;
   margin-top: 20px;
   padding: 10px 12px;
@@ -71,8 +71,8 @@
 }
 
 .btn-form:hover{
-  color: white;
-  background-color: var(--color);
+  color: var(--color);
+  background-color: var(--card-bg);
 }
 
 #top-btn{
