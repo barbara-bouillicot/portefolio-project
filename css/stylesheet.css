@@ -420,6 +420,10 @@ h1{
 }
 
 @media (min-width: 767px) and (max-width: 992px) {
+  .project-img img{
+    height:282px;
+  }
+
   .chatbot-container{
     top:194px;
   }
@@ -430,12 +434,20 @@ h1{
 }
 
 @media (min-width: 993px) and (max-width: 1024px) {
+  .project-img img{
+    height:282px;
+  }
+
   .chatbot-container{
     top:264px;
   }
 }
 
 @media (min-width: 1024px) {
+  .project-img img{
+    height:282px;
+  }
+
   .typing-container{
     margin: 165px auto;
   }
