@@ -71,7 +71,7 @@ closeBtn.addEventListener("click", () => {
 
 const data = {
   chatinit: {
-    title: ["Hello 😀", "This is my chatbot!", "I can answer questions about my work", "How can I help you?"],
+    title: ["Hello 😀", "This is my chatbot!", "So now, I can answer some questions", "How can I help you?"],
     options: ["Just saying hello", "How can I reach out to you?", "I need a tax advice", "I want to see your resume"]
   },
   options: {
