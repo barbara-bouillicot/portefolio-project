@@ -57,13 +57,13 @@
   margin-top: 8px;
 }
 
-.fa-link, .fa-github{
+.fa-link, .fa-github, .fa-video{
   font-size: 26px;
   margin: 0 10px 0 10px;
   color: var(--text-color);
 }
 
-.fa-github:hover{
+.fa-github:hover,.fa-video:hover{
   color: var(--color);
 }
 
